@@ -1,16 +1,39 @@
 import java.util.Scanner;
-//Week6_Ques5
-import Student.Student;
-import Course.Course;
+//Week6_Ques6
+import accounts.*;
+import payments.*;
 
 public class Main {
     public static void main(String[] args) {
 
-        Student s = new Student("Adrija", 101);
-        Course c = new Course("Computer Science", 501);
+        // Runtime Polymorphism
+        Account a;
 
-        s.displayStudent();
-        c.displayCourse();
+        a = new SavingsAccount("S101", "Adrija", 25000);
+        a.displayDetails();
+
+        System.out.println();
+
+        a = new CurrentAccount("C101", "Rahul", 40000);
+        a.displayDetails();
+
+        System.out.println();
+
+        // Payment
+        Payment p;
+
+        p = new UPIPayment();
+        p.pay(2000);
+        ((UPIPayment)p).verifyPayment();
+
+        System.out.println();
+
+        p = new CardPayment();
+        p.pay(3000);
+
+        // Tagging interface
+        if (p instanceof OnlineTransaction)
+            System.out.println("Card payment is an online transaction");
     }
 }
 
