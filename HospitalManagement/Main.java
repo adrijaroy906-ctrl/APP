@@ -4,10 +4,10 @@ import patient.Patient;
 
 public class Main {
     public static void main(String[] args) {
-        Doctor d1 = new Doctor(1, "Ravi", "Cardiology", 500);
-        Doctor d2 = new Doctor(2, "Meena", "Dermatology", 400);
+        Doctor d1 = new Doctor(1, "Rohan", "Cardiology", 500);
+        Doctor d2 = new Doctor(2, "Madhu", "Dermatology", 400);
 
-        Patient p1 = new Patient(101, "Arun", "Heart", 30);
+        Patient p1 = new Patient(101, "Ajay", "Heart", 30);
         Patient p2 = new Patient(102, "Priya", "Skin", 25);
         Patient p3 = new Patient(103, "Kiran", "Heart", 40);
 
