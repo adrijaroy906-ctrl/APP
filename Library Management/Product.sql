@@ -1,10 +1,11 @@
-CREATE DATABASE store;
+CREATE DATABASE library;
 
-USE store;
+USE library;
 
-CREATE TABLE Product (
-    ProductID INT PRIMARY KEY,
-    ProductName VARCHAR(100),
+CREATE TABLE Book (
+    BookID INT PRIMARY KEY,
+    Title VARCHAR(100),
+    Author VARCHAR(100),
     Price DOUBLE,
-    Quantity INT
+    Availability BOOLEAN
 );
