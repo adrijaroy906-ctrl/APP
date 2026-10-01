@@ -7,7 +7,7 @@ public class ProductJDBC {
         return DriverManager.getConnection(
             "jdbc:mysql://localhost:3306/store",
             "root",
-            "password"
+            "password" //Replace "password" with your actual MySQL password
         );
     }
 
