@@ -1,4 +1,4 @@
-#Question2
+#Question 2
 from functools import reduce
 
 salaries = [30000, 45000, 35000, 50000, 25000]
